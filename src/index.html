@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link type="Image/x-icon" href="./img/favicon.svg" rel="icon" />
+
+    <title>Blog JS</title>
+  </head>
+
+  <body class="dark">
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#">
+            <img src="#" class="logo" alt="logo" width="150" />
+          </a>
+
+          <div class="btn-group">
+            <input class="search-input" type="text" placeholder="Search" />
+
+            <button class="theme-btn dark">
+              <span><i class="fa-solid fa-moon"></i></span>
+              <span><i class="fa-solid fa-sun"></i></span>
+            </button>
+
+            <button class="login-btn" data-for-modal="modal-1">Login</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="container"></div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog">
+            <h2 class="h2">Latest Blog Post</h2>
+
+            <div class="blog-card-group">
+              <div class="blog-card">
+                <img
+                  src="/src/img/Database.jpeg"
+                  alt=""
+                  class="blog-card-banner"
+                  width="250"
+                />
+                <div class="blog-content-wrapper">
+                  <button class="blog-topic text-tiny">Database</button>
+                  <h3><a href="#" class="h3">Blog Title Database</a></h3>
+                  <p class="blog-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Necessitatibus exercitationem, quos cumque enim ipsum magnam
+                    vero veniam saepe quod facilis adipisci, voluptate dolorum
+                    quia asperiores. Est quidem blanditiis nemo voluptatum.
+                  </p>
+                  <div class="wrapper-flex">
+                    <div class="wrapper">
+                      <a href="#" class="h4">Author</a>
+                      <p class="text-sm">
+                        <time datatime="2024-01-02">Jan 02, 2024</time>
+                        <span class="separator"></span>
+                        <i class="fa-regular fa-clock"></i>
+                        <time datetime="PT3M">3 min</time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn load-more">Load More</button>
+          </div>
+
+          <div class="aside">
+            <button class="btn create-post-btn" data-for-modal="modal-2">
+              Create a new post
+            </button>
+
+            <div class="topics">
+              <h2 class="h2">Topics</h2>
+              <a href="#" class="topic-btn">
+                <span class="icon-box"><i class="fa-brands fa-js"></i></span>
+                <p>JavaScript</p>
+              </a>
+              <a href="#" class="topic-btn">
+                <span class="icon-box"
+                  ><i class="fa-solid fa-database"></i
+                ></span>
+                <p>Database</p>
+              </a>
+              <a href="#" class="topic-btn">
+                <span class="icon-box"
+                  ><i class="fa-brands fa-node-js"></i
+                ></span>
+                <p>NodeJS</p>
+              </a>
+            </div>
+
+            <div class="tags">
+              <h2 class="h2">Tags</h2>
+              <div class="wrapper">
+                <button class="hashtag">#javascript</button>
+                <button class="hashtag">#database</button>
+                <button class="hashtag">#nodejs</button>
+                <button class="hashtag">#nodejs</button>
+                <button class="hashtag">#nodejs</button>
+                <button class="hashtag">#javascript</button>
+                <button class="hashtag">#database</button>
+              </div>
+            </div>
+
+            <div class="contact">
+              <h2 class="h2">Lorem, ipsum dolor.</h2>
+              <ul class="social-link">
+                <li>
+                  <a href="#" class="icon-box discord"><i>Ic</i></a>
+                </li>
+                <li>
+                  <a href="#" class="icon-box twitter"><i>Ic</i></a>
+                </li>
+                <li>
+                  <a href="#" class="icon-box github"><i>Ic</i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="footer-logo">
+            <img src="#" class="logo" alt="logo" width="150" />
+          </a>
+
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ab!
+          </p>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Quick Links</p>
+
+          <ul>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+          </ul>
+        </div>
+
+        <div class="wrapper">
+          <p class="footer-title">Legal Stuff</p>
+
+          <ul>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+            <li><a href="#" class="footer-link">Lorem, ipsum.</a></li>
+          </ul>
+        </div>
+
+        <p class="copyright">&copy; Copyright 2023 <a href="#">DevBlog</a></p>
+      </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal auth" data-modal="modal-1">
+      <div class="modal-content">
+        <div class="close">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="modal-body">
+          <div class="screen">
+            <form class="login">
+              <div class="login-field">
+                <i class="login-icon fas fa-user"></i>
+                <input
+                  type="text"
+                  class="login-input"
+                  placeholder="User name / Email"
+                />
+                <div class="login-field">
+                  <i class="login-icon fas fa-lock"></i>
+                  <input
+                    type="password"
+                    class="login-input"
+                    placeholder="Password"
+                  />
+                </div>
+                <button class="button login-submit">
+                  <span class="button-text">Log In Now</span>
+                  <i class="button-icon fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </form>
+
+            <div class="social-login">
+              <h3>log in via</h3>
+              <div class="social-icons">
+                <a href="#" class="social-login-icon fab fa-instagram"></a>
+                <a href="#" class="social-login-icon fab fa-facebook"></a>
+                <a href="#" class="social-login-icon fab fa-twitter"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-background">
+            <span
+              class="screen-background-shape screen-background-shape4"
+            ></span>
+            <span
+              class="screen-background-shape screen-background-shape3"
+            ></span>
+            <span
+              class="screen-background-shape screen-background-shape2"
+            ></span>
+            <span
+              class="screen-background-shape screen-background-shape1"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal create-post" data-modal="modal-2">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="close">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h2>Create a new post</h2>
+        </div>
+
+        <div class="modal-body">
+          <form id="form" action="#">
+            <input id="subject" type="text" placeholder="SUBJECT" />
+            <select id="tag" required>
+              <option value="" disabled>Blog Tag</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="Database">Database</option>
+              <option value="NodeJS">NodeJS</option>
+            </select>
+            <textarea
+              id="post-content"
+              type="text"
+              placeholder="POST CONTENT"
+            ></textarea>
+            <input id="submit" type="submit" value="SUBMIT!" disabled />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
